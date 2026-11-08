@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowDown,
@@ -675,8 +675,106 @@ function Footer() {
     </footer>
   );
 }
+
+function Preloader() {
+  return (
+    <div className="preloader">
+      <div className="preloader-content">
+
+        {/* ROTATING DIGITAL ORBIT */}
+        <div className="orbit-container">
+
+          <div className="orbit orbit-outer">
+            <svg viewBox="0 0 220 220">
+              <defs>
+                <path
+                  id="outer-circle"
+                  d="M 110,110 m -82,0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0"
+                />
+              </defs>
+
+              <text>
+                <textPath href="#outer-circle">
+                  01010010 01000101 01000001 01000100 01011001 •
+                </textPath>
+              </text>
+            </svg>
+          </div>
+
+          <div className="orbit orbit-inner">
+            <svg viewBox="0 0 220 220">
+              <defs>
+                <path
+                  id="inner-circle"
+                  d="M 110,110 m -57,0 a 57,57 0 1,1 114,0 a 57,57 0 1,1 -114,0"
+                />
+              </defs>
+
+              <text>
+                <textPath href="#inner-circle">
+                  DEVELOPER • CREATIVE • BUILDER •
+                </textPath>
+              </text>
+            </svg>
+          </div>
+
+          <div className="orbit-center"></div>
+        </div>
+
+        {/* PERSONAL INTRODUCTION */}
+        <div className="preloader-intro">
+          <h1>
+            Philip <span>Okoth</span>
+          </h1>
+
+          <p className="preloader-role">
+            SOFTWARE DEVELOPER
+          </p>
+
+          <p className="preloader-subtitle">
+            PRODUCT THINKER · GRAPHIC DESIGNER
+          </p>
+        </div>
+
+        {/* SYSTEM LOADING */}
+        <div className="system-loader">
+
+          <div className="loader-heading">
+            <span>LOADING SYSTEM</span>
+            <span>INITIALIZING...</span>
+          </div>
+
+          <div className="loader-box">
+            <div className="loader-blocks"></div>
+          </div>
+
+          <div className="loader-footer">
+            <span>PHILIP.BOOT</span>
+            <span>PLEASE WAIT_</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
     
-  function App() {
+ function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3400);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
+
   return (
     <>
       <Navbar />
