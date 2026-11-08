@@ -159,19 +159,18 @@ function Portrait() {
           </span>
         </div>
 
-        <img
-          src="/public/images/philip.png.jpeg"
-          alt="Portrait of Philip Otieno Okoth"
-          className="relative z-10 w-full h-full object-cover object-center"
-          onError={(event) => {
-            event.currentTarget.style.display = "none";
-          }}
-        />
-
+       <img
+  src="/public/images/philip.png.jpeg"
+  alt="Portrait of Philip Otieno Okoth"
+  className="absolute inset-0 z-0 w-full h-full object-cover object-center"
+  onError={(event) => {
+    event.currentTarget.style.display = "none";
+  }}
+/>
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
         <div className="absolute bottom-5 left-5 z-20">
-          <p className="text-xs tracking-[0.2em] text-white/60">
+          <p className="text-xs tracking-[0.2em] text-white/90">
             THE PERSON BEHIND THE PIXELS
           </p>
           <p className="font-heading text-xl font-semibold mt-1">
@@ -181,9 +180,6 @@ function Portrait() {
 
       </div>
 
-      <div className="absolute -right-4 top-16 bg-[#a8b5ff] text-[#101010] p-4 rounded-full shadow-xl">
-        <Sparkles size={22} />
-      </div>
 
       <div className="absolute -left-8 bottom-20 bg-[#1b1b1b] border border-white/10 rounded-xl p-4 shadow-2xl">
         <p className="text-[10px] tracking-widest text-gray-500">
