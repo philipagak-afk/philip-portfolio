@@ -9,8 +9,6 @@ import {
   Layers3,
   Palette,
   Sparkles,
-  Sun,
-  Moon,
 } from "lucide-react";
 
 const projects = [
@@ -73,17 +71,8 @@ const skills = [
   },
 ];
 
-function Navbar({isLightMode,onToggleTheme}){
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  <button
-  onClick={onToggleTheme}
-  aria-label={isLightMode ? "Switch to dark mode" : "Switch to light mode"}
-  className="flex items-center gap-2 border border-white/20 rounded-full px-4 py-2.5 text-sm hover:bg-white/10 transition-all"
->
-  {isLightMode ? <Moon size={17} /> : <Sun size={17} />}
-  <span>{isLightMode ? "Dark mode" : "Light mode"}</span>
-</button>
 
   const links = [
     { label: "Work", href: "#work" },
@@ -693,11 +682,8 @@ function Footer() {
     
   function App() {
   return (
-     <div className={isLightMode ? "light-mode" : "dark-mode"}></div>
-      <Navbar
-       isLightMode={isLightMode}
-        onToggleTheme={toggleTheme}
-       />
+    <>
+      <Navbar />
 
       <main>
         <Hero />
