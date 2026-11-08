@@ -618,7 +618,7 @@ function Contact() {
           </p>
 
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:philipagak@gmail.com"
             className="inline-flex items-center justify-center gap-3 bg-[#a8b5ff] text-[#101010] rounded-full px-7 py-4 font-semibold text-sm hover:bg-white transition-colors"
           >
             Get in touch <ArrowUpRight size={18} />
