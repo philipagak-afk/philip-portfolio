@@ -9,7 +9,7 @@ import {
   Layers3,
   Palette,
   Sparkles,
-  sun,
+  Sun,
   Moon,
 } from "lucide-react";
 

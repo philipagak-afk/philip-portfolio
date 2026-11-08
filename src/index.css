@@ -125,6 +125,60 @@ a {
   background: #a8b5ff;
 }
 
+/* LIGHT MODE */
+
+.light-mode {
+  background: #f5f5f2;
+  color: #171717;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.light-mode header {
+  background: rgba(245, 245, 242, 0.92) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  color: #171717;
+}
+
+.light-mode header a,
+.light-mode header button {
+  color: #171717;
+}
+
+.light-mode header button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.light-mode section {
+  color: #171717;
+}
+
+.light-mode .project-card {
+  background: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-mode .project-card h3,
+.light-mode .project-card p {
+  color: #222;
+}
+
+.light-mode [class*="text-gray-"] {
+  color: #666 !important;
+}
+
+.light-mode [class*="text-white"] {
+  color: #171717 !important;
+}
+
+.light-mode [class*="border-white"] {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.light-mode footer {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
 @media (max-width: 640px) {
   .container-width {
     width: calc(100% - 36px);
