@@ -693,8 +693,11 @@ function Footer() {
     
   function App() {
   return (
-    <>
-      <Navbar />
+     <div className={isLightMode ? "light-mode" : "dark-mode"}></div>
+      <Navbar
+       isLightMode={isLightMode}
+        onToggleTheme={toggleTheme}
+       />
 
       <main>
         <Hero />
