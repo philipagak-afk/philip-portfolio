@@ -160,7 +160,7 @@ function Portrait() {
         </div>
 
         <img
-          src="/images/philip.jpg"
+          src="/public/images/philip.png.jpeg"
           alt="Portrait of Philip Otieno Okoth"
           className="relative z-10 w-full h-full object-cover object-center"
           onError={(event) => {
@@ -214,7 +214,7 @@ function Hero() {
           <div className="flex items-center gap-3 mb-9">
             <span className="w-2 h-2 rounded-full bg-[#a8b5ff]" />
             <p className="text-xs sm:text-sm tracking-[0.18em] text-gray-400">
-              INDEPENDENT DEVELOPER & CREATIVE
+              INDEPENDENT DEVELOPER & CREATIVE DESIGNER
             </p>
           </div>
 
