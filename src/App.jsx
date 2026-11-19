@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
+
 const projects = [
   {
     number: "01",
@@ -20,7 +21,7 @@ const projects = [
       "A movie discovery platform designed to make exploring films and television more intuitive.",
     technologies: ["React", "Tailwind CSS", "TMDB API"],
     type: "motion",
-    image:"/public/images/motion.png"
+    image: "/images/motion.png",
     year: "2026",
   },
   {
@@ -31,21 +32,22 @@ const projects = [
       "A location-sharing platform for registering devices and managing opted-in location updates.",
     technologies: ["React", "Leaflet", "JavaScript"],
     type: "trackpoint",
-    image:"/public/images/trackpoint.png"
+    image: "/images/trackpoint.png",
     year: "2026",
   },
- {
-  number: "03",
-  name: "Nairobi Elite Cleaners",
-  category: "CLEANING SERVICES WEBSITE",
-  description:
-    "A responsive business website showcasing professional cleaning services and making it easier for customers to send enquiries through WhatsApp.",
-  technologies: ["HTML", "CSS", "JavaScript"],
-  type: "cleaners",
-  image:"/public/images/cleaners.png"
-  year: "2026",
-},
+  {
+    number: "03",
+    name: "Nairobi Elite Cleaners",
+    category: "CLEANING SERVICES WEBSITE",
+    description:
+      "A responsive business website showcasing professional cleaning services and making it easier for customers to send enquiries through WhatsApp.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    type: "cleaners",
+    image: "/images/cleaners.png",
+    year: "2026",
+  },
 ];
+
 
 const skills = [
   {
