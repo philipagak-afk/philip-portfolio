@@ -441,7 +441,11 @@ function Projects() {
               <div className={`overflow-hidden ${
                 index === 0 ? "h-[300px] sm:h-[390px]" : "h-[280px]"
               }`}>
-                <ProjectVisual type={project.type} />
+                <img
+                  src={project.image}
+                  alt={`${project.name} project screenshot`}
+                  className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                />
               </div>
 
               <div className="p-6 sm:p-8">
