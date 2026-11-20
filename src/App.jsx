@@ -10,6 +10,7 @@ import {
   Palette,
   Sparkles,
 } from "lucide-react";
+import { li } from "framer-motion/client";
 
 
 const projects = [
@@ -44,6 +45,7 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     type: "cleaners",
     image: "/images/cleaners.png",
+    live:"https://nairobi-elite-cleaners.vercel.app/"
     year: "2026",
   },
 ];
@@ -478,9 +480,28 @@ function Projects() {
                     </div>
                   </div>
 
-                  <div className="w-11 h-11 shrink-0 rounded-full border border-white/20 flex items-center justify-center text-[#a8b5ff]">
-                    <ArrowUpRight size={20} />
-                  </div>
+                <div className="flex flex-wrap gap-3 shrink-0">
+                   <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-3 rounded-full bg-[#a8b5ff] text-black text-sm font-medium hover:bg-white transition-colors flex items-center gap-2"
+                  >
+                  Live Demo
+                    <ArrowUpRight size={16} />
+               </a>
+
+                 <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-3 rounded-full border border-white/20 text-white text-sm hover:bg-white/10 transition-colors flex items-center gap-2"
+                  >
+                View Code
+                <ArrowUpRight size={16} />
+              </a>
+             </div>
+
                 </div>
               </div>
             </motion.article>
