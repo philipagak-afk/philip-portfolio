@@ -34,6 +34,7 @@ const projects = [
     technologies: ["React", "Leaflet", "JavaScript"],
     type: "trackpoint",
     image: "/images/trackpoint.png",
+    live: "https://track-point-gray.vercel.app/",
     year: "2026",
   },
   {
@@ -45,7 +46,7 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     type: "cleaners",
     image: "/images/cleaners.png",
-    live:"https://nairobi-elite-cleaners.vercel.app/"
+    live:"https://nairobi-elite-cleaners.vercel.app/",
     year: "2026",
   },
 ];
@@ -491,15 +492,7 @@ function Projects() {
                     <ArrowUpRight size={16} />
                </a>
 
-                 <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-3 rounded-full border border-white/20 text-white text-sm hover:bg-white/10 transition-colors flex items-center gap-2"
-                  >
-                View Code
-                <ArrowUpRight size={16} />
-              </a>
+             
              </div>
 
                 </div>
